@@ -1,0 +1,22 @@
+{
+  "name": "nci_blockchain_lab",
+  "version": "1.0.0",
+  "description": "THis is a Sample Project for BlockChain Lab",
+  "main": "contract.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agrawallalit/NCI_Blockchain_lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agrawallalit/NCI_Blockchain_lab/issues"
+  },
+  "homepage": "https://github.com/agrawallalit/NCI_Blockchain_lab#readme",
+  "dependencies": {
+    "web3": "^1.6.0"
+  }
+}
