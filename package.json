@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/agrawallalit/NCI_Blockchain_lab#readme",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "web3": "^1.6.0"
   }
 }

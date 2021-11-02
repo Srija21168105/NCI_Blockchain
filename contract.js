@@ -4,10 +4,18 @@ console.log("This is Lalit");
 // this is a basic readonly contract interaction file
 
 // today's lab
+//npm install dotenv
+// this sets up my .env file
+require('dotenv').config()
 
-// instantiate web3
+// let's load our environment variables
+infuraToken = process.env.INFURA_TOKEN
+contractAddress = process.env.CONTRACT_ADDRESS
+ownerAddress = process.env.OWNER_ADDRESS
 
-const rpcURL = "https://ropsten.infura.io/v3/";
+// set up a RPC (remote procedure call) to connect to an ethereum node
+const rpcURL = "https://ropsten.infura.io/v3/" + infuraToken;
+
 const web3 = new Web3(rpcURL);
 console.log("connected to web3");
 
@@ -272,8 +280,12 @@ const abi = [
 // connect to our contract on ropsten
 
 // get our contract address
-const address = "0x3691c5b28b497c45240bbd559f2bd1a91520db81";
-const owner = "0x440f9C833a2a947888a6d1E3eF61DE143C3c9806";
+// specify our contract address 
+const address = contractAddress;
+
+// specify our owner address
+const owner = ownerAddress;
+
 
 const contract = new web3.eth.Contract(abi, address);
 console.log("connected to contract on ropsten");
