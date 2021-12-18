@@ -1,8 +1,7 @@
 const Web3 = require("web3")
-console.log("Hello World");
+// console.log("Hello World");
 console.log("This is Lalit");
 
-// this is a basic readonly contract interaction file
 
 // this sets up my .env file
 require('dotenv').config()
@@ -323,15 +322,8 @@ const returnAllValues = async() => {
     console.log(await getBalanceOfAccount(owner));
 }
 
-//returnAllValues();
-//console.log("hello world?");
-
 module.exports = { getSymbol, getDecimals, getBalanceOfAccount, getName }
 
-
-
-
-//console.log("hello world?");
 
 
 

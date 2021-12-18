@@ -10,7 +10,7 @@ require('dotenv').config()
 infuraToken = process.env.INFURA_TOKEN
 contractAddress = process.env.CONTRACT_ADDRESS
 ownerAddress = process.env.OWNER_ADDRESS
-privateKey = Buffer.from(process.env.SUPER_SECRET_PRIVATE_KEY, 'hex')
+privateKey = Buffer.from(process.env.PRIVATE_KEY, 'hex')
 
 // get the ABI (interface) for our contract
 const abi = [
@@ -304,7 +304,7 @@ const transferToken = async(toAccount, amount) => {
     // sign the tx - THIS USES THE SECRET PRIVATE KEY
     tx.sign(privateKey);
 
-    console.log("signed transaction with super secret private key");
+    console.log("signed transaction with private key");
 
     // serialize the raw tx
     const serializedTx = tx.serialize();
@@ -317,6 +317,4 @@ const transferToken = async(toAccount, amount) => {
     console.log("transaction hash: " + txResponse.transactionHash)
     console.log("transaction in block: " + txResponse.blockNumber)
 }
-
 module.exports = { transferToken }
-//transferToken("0xFbC8857d46223C39C48BA844c5AB0159EA3B8692", 123000000)
