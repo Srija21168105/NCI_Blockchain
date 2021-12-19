@@ -6,11 +6,11 @@
 1. Git Clone 
 `git clone https://github.com/agrawallalit/NCI_Blockchain.git` <br>
 
-2. Create .env file with following content. 
-INFURA_TOKEN= < Infura Project Token >
-CONTRACT_ADDRESS= < Address of Contract deployed>
-OWNER_ADDRESS= < Metamask Account ID >
-PRIVATE_KEY= < Private from Metamask Account >
+2. Create .env file at the root directory with following content. 
+`INFURA_TOKEN= < Infura Project Token >`<br>
+`CONTRACT_ADDRESS= < Address of Contract deployed>`<br>
+`OWNER_ADDRESS= < Metamask Account ID >`<br>
+`PRIVATE_KEY= < Private from Metamask Account >`<br>
 
 Note:- Kindly replace the above values correctly.
 
