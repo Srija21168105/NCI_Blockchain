@@ -12,7 +12,7 @@
 `OWNER_ADDRESS= < Metamask Account ID >`<br>
 `PRIVATE_KEY= < Private from Metamask Account >`<br>
 
-Note:- Kindly replace the above values correctly.
+Note:- Kindly replace the above values correctly. For reference refer `dotenv` file
 
 3. Creating Docker Image <br>
 ` docker build -t lablockchain:1.0 .` <br>
